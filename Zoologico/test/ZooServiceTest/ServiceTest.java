@@ -21,19 +21,20 @@ public class ServiceTest {
 
         String nombreEspecie = ("loro");
 
-        Ave a4 = new Ave(2, null, true, null, 2, 2, null, 2, 2, 2, 2, 2);
+        zoo.agregarNuevaAve(2,"rojo", true, null, 2, 2,"loro", 2, 2, 2, 2, 2);
 
         //Act (ACCION)
-        a4.setNombre("loro");
-
-        a4.setColorPlumas("rojo");
-
-        zoo.getColorCaracteristicoEspecie(nombreEspecie);
+      
+        String expResult = zoo.getColorCaracteristicoEspecie(nombreEspecie);
 
         // Assert(Prueba)     
-        assertEquals(colorEsperado, ("rojo"));
+        assertEquals(colorEsperado,expResult);
     }
-   @Test
+//   
+    
+    
+    
+    @Test
     public void nAparearseFacilmenteTest() {
 //                    Arrange (preparacion)
         ZooService zoo = new ZooService(new ArrayList<>());
@@ -49,7 +50,8 @@ public class ServiceTest {
 
         // Assert(Prueba)  
         assertTrue(resultado);
-        
-        }
-
+//        
+//        }
+//
+}
 }
