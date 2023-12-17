@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="1" hostname="DESKTOP-3P4GPVQ" name="ZooServiceTest.ServiceTest" skipped="0" tests="1" time="0.14" timestamp="2023-12-17T21:14:00">
+<testsuite errors="0" failures="0" hostname="DESKTOP-3P4GPVQ" name="ZooServiceTest.ServiceTest" skipped="0" tests="2" time="0.219" timestamp="2023-12-17T21:24:38">
   <properties>
     <property name="netbeans.autoupdate.country" value="US" />
     <property name="javac.test.classpath" value="C:\Program Files\NetBeans 8.0\java\modules\ext\AbsoluteLayout.jar:build/classes:D:\junit\hamcrest-core-1.3.jar:D:\junit\junit-4.11.jar" />
@@ -37,7 +37,7 @@
     <property name="user.name" value="ADDIEL" />
     <property name="copylibs.rebase" value="true" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner ZooServiceTest.ServiceTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,D:\git\Proyecto-Fin-de-Curso-Zoo\Zoologico\build\test\results\TEST-ZooServiceTest.ServiceTest.xml crashfile=D:\git\Proyecto-Fin-de-Curso-Zoo\Zoologico\build\junitvmwatcher4971440595885353119.properties propsfile=D:\git\Proyecto-Fin-de-Curso-Zoo\Zoologico\build\junit4565739066891194252.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner ZooServiceTest.ServiceTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,D:\git\Proyecto-Fin-de-Curso-Zoo\Zoologico\build\test\results\TEST-ZooServiceTest.ServiceTest.xml crashfile=D:\git\Proyecto-Fin-de-Curso-Zoo\Zoologico\build\junitvmwatcher6335378872616302697.properties propsfile=D:\git\Proyecto-Fin-de-Curso-Zoo\Zoologico\build\junit153479503674946554.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -69,7 +69,7 @@
     <property name="javac.debug" value="true" />
     <property name="javadoc.splitindex" value="true" />
     <property name="file.separator" value="\" />
-    <property name="javac.includesfile.binary" value="D:\git\Proyecto-Fin-de-Curso-Zoo\Zoologico\null1088078013" />
+    <property name="javac.includesfile.binary" value="D:\git\Proyecto-Fin-de-Curso-Zoo\Zoologico\null1282971362" />
     <property name="mkdist.disabled" value="false" />
     <property name="javac.test.processorpath" value="C:\Program Files\NetBeans 8.0\java\modules\ext\AbsoluteLayout.jar:build/classes:D:\junit\hamcrest-core-1.3.jar:D:\junit\junit-4.11.jar" />
     <property name="netbeans.buildnumber" value="201403101706" />
@@ -300,11 +300,8 @@
     <property name="platform.active" value="default_platform" />
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
   </properties>
-  <testcase classname="ZooServiceTest.ServiceTest" name="getColorCaracteristicoEspecieTest" time="0.015">
-    <failure message="expected:&lt;[amarill]o&gt; but was:&lt;[roj]o&gt;" type="junit.framework.ComparisonFailure">junit.framework.ComparisonFailure: expected:&lt;[amarill]o&gt; but was:&lt;[roj]o&gt;
-	at ZooServiceTest.ServiceTest.getColorCaracteristicoEspecieTest(ServiceTest.java:31)
-</failure>
-  </testcase>
+  <testcase classname="ZooServiceTest.ServiceTest" name="getColorCaracteristicoEspecieTest" time="0.016" />
+  <testcase classname="ZooServiceTest.ServiceTest" name="nAparearseFacilmenteTest" time="0.0" />
   <system-out><![CDATA[Nueva especie agregada: loro
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -36,22 +36,25 @@ public class ServiceTest {
     
     @Test
     public void nAparearseFacilmenteTest() {
-//                    Arrange (preparacion)
+                    
+//                Arrange (preparacion)
         ZooService zoo = new ZooService(new ArrayList<>());
 
         int mes = 2;
 
         int dia = 1;
 
-        Ave a5 = new Ave(2, null, true, null, 2, 2, null, 2, 2, 2, 2, 2);
-
-        //Act (ACCION)
+        Ave a5 = new Ave(1, null, true, null, 1, 1, null, 1, 1, 1, 1, 1);
+        
+        a5.setMesApareamiento(2);
+        
+            //Act (ACCION)
         boolean resultado = zoo.especiesPuedenAparearseFacilmente(a5, dia, mes);
 
         // Assert(Prueba)  
         assertTrue(resultado);
 //        
-//        }
+//        
 //
 }
 }
