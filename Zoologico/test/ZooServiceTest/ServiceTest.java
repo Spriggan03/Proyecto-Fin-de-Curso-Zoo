@@ -33,5 +33,23 @@ public class ServiceTest {
         // Assert(Prueba)     
         assertEquals(colorEsperado, ("rojo"));
     }
-  
+   @Test
+    public void nAparearseFacilmenteTest() {
+//                    Arrange (preparacion)
+        ZooService zoo = new ZooService(new ArrayList<>());
+
+        int mes = 2;
+
+        int dia = 1;
+
+        Ave a5 = new Ave(2, null, true, null, 2, 2, null, 2, 2, 2, 2, 2);
+
+        //Act (ACCION)
+        boolean resultado = zoo.especiesPuedenAparearseFacilmente(a5, dia, mes);
+
+        // Assert(Prueba)  
+        assertTrue(resultado);
+        
+        }
+
 }
