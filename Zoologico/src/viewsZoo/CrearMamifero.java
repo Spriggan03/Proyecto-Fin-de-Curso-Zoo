@@ -3,17 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package viewsZoo;
 
-import javafx.scene.control.RadioButton;
+import Modelos.Carnivoro;
+import Modelos.Herbivoro;
+import Modelos.Mamifero;
+import javafx.scene.control.RadioButton; 
 
 /**
  *
  * @author Rey
  */
 public class CrearMamifero extends javax.swing.JDialog {
+
     ViewZoo viewZoo = new ViewZoo();
+
     /**
      * Creates new form CrearMamifero
      */
@@ -216,7 +220,7 @@ public class CrearMamifero extends javax.swing.JDialog {
 
     private void jButtonAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAceptarActionPerformed
         // TODO add your handling code here:
-         String nombre = jTextField1.getText();
+        String nombre = jTextField1.getText();
         int cantAnimal = jSpinner1.getComponentCount();
         int cantHembras = jSpinner2.getComponentCount();
         double peso = Integer.parseInt(jTextField2.getText());
@@ -226,61 +230,74 @@ public class CrearMamifero extends javax.swing.JDialog {
         String colorPelos = jTextField6.getText();
         double avgComida = Integer.parseInt(jTextField7.getText());
         String color = jTextField8.getText();
-        
-           
-      
-             
-                
-        
+        boolean tipoDeAlimentacion = true;
+        if (jRadioButton1.isSelected()) {
+            tipoDeAlimentacion = true;
+            Carnivoro carnivoro = new Carnivoro(avgComida, nombre, cantAnimal, cantHembras, peso, edad, edad, cantAnimal, colorPelos);
+            
+        }
+        if (jRadioButton2.isSelected()) {
+            tipoDeAlimentacion = false;
+            Herbivoro hervivoro = new Herbivoro(tiempoGestacion, nombre, cantAnimal, cantHembras, peso, edad, edad, cantAnimal, colorPelos);
+        }
+
+
     }//GEN-LAST:event_jButtonAceptarActionPerformed
 
     private void jTextField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyTyped
         // TODO add your handling code here:
         char teclaPulsada = evt.getKeyChar();
-        if(!Character.isLetter(teclaPulsada))
-            evt.consume();                         
+        if (!Character.isLetter(teclaPulsada)) {
+            evt.consume();
+        }
     }//GEN-LAST:event_jTextField1KeyTyped
 
     private void jTextField3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField3KeyTyped
         // TODO add your handling code here:
         char teclaPulsada = evt.getKeyChar();
-        if(!Character.isDigit(teclaPulsada))
-            evt.consume();                      
+        if (!Character.isDigit(teclaPulsada)) {
+            evt.consume();
+        }
     }//GEN-LAST:event_jTextField3KeyTyped
 
     private void jTextField5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField5KeyTyped
         // TODO add your handling code here:
         char teclaPulsada = evt.getKeyChar();
-        if(!Character.isDigit(teclaPulsada))
-            evt.consume();                         
+        if (!Character.isDigit(teclaPulsada)) {
+            evt.consume();
+        }
     }//GEN-LAST:event_jTextField5KeyTyped
 
     private void jTextField2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyTyped
         // TODO add your handling code here:
         char teclaPulsada = evt.getKeyChar();
-        if(!Character.isDigit(teclaPulsada))
-            evt.consume();                          
+        if (!Character.isDigit(teclaPulsada)) {
+            evt.consume();
+        }
     }//GEN-LAST:event_jTextField2KeyTyped
 
     private void jTextField6KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField6KeyTyped
         // TODO add your handling code here:
         char teclaPulsada = evt.getKeyChar();
-        if(!Character.isLetter(teclaPulsada))
-            evt.consume(); 
+        if (!Character.isLetter(teclaPulsada)) {
+            evt.consume();
+        }
     }//GEN-LAST:event_jTextField6KeyTyped
 
     private void jTextField7KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField7KeyTyped
         // TODO add your handling code here:
         char teclaPulsada = evt.getKeyChar();
-        if(!Character.isDigit(teclaPulsada))
-            evt.consume(); 
+        if (!Character.isDigit(teclaPulsada)) {
+            evt.consume();
+        }
     }//GEN-LAST:event_jTextField7KeyTyped
 
     private void jTextField8KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField8KeyTyped
         // TODO add your handling code here:
         char teclaPulsada = evt.getKeyChar();
-        if(!Character.isLetter(teclaPulsada))
-            evt.consume(); 
+        if (!Character.isLetter(teclaPulsada)) {
+            evt.consume();
+        }
     }//GEN-LAST:event_jTextField8KeyTyped
 
     /**
