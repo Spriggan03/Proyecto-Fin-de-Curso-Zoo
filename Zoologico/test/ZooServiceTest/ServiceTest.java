@@ -2,11 +2,11 @@ package ZooServiceTest;
 
 import Modelos.Ave;
 import Modelos.Especie;
+import Modelos.Reptil;
 import Services.ZooService;
 import java.util.ArrayList;
 import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertTrue;
-import static junit.framework.Assert.assertTrue;
+import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 public class ServiceTest {
@@ -30,7 +30,7 @@ public class ServiceTest {
         // Assert(Prueba)     
         assertEquals(colorEsperado,expResult);
     }
-//   
+  
     
     
     
@@ -53,8 +53,21 @@ public class ServiceTest {
 
         // Assert(Prueba)  
         assertTrue(resultado);
-//        
-//        
-//
 }
+
+    @Test
+    public void agergarNuevaEspecieTest() {
+        // Arrange (Preparación)
+        ZooService zoo = new ZooService(new ArrayList<>());
+
+        Reptil r1 = new Reptil(0, null, true, null, 0, 0, "Pepito", 0, 0, 0, 0, 0);
+
+        //         Act (Acción)
+        boolean result = zoo.agregarNuevaEspecie(r1);
+
+        // Assert (Verificación)
+        assertTrue(result);
+
+    }
+
 }
